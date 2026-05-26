@@ -1,0 +1,116 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | DEPARTA</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+  <section class="auth-container">
+
+    <!-- LEFT SIDE -->
+    <div class="auth-left">
+
+      <div class="logo">
+        <div class="logo-icon">D</div>
+        <h2>DEPARTA</h2>
+      </div>
+
+      <div class="auth-content">
+
+        <span class="badge">Join DEPARTA</span>
+
+        <h1>
+          Build Your Academic Identity.
+        </h1>
+
+        <p>
+          Connect with students, share knowledge and grow academically with your community.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="auth-right">
+
+      <div class="form-container register-container">
+
+        <h2>Create Account</h2>
+
+        <p class="form-subtitle">
+          Join the academic social platform.
+        </p>
+
+        <form id="registerForm">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+              <label>University</label>
+              <input type="text" placeholder="Your university">
+            </div>
+
+            <div class="form-group">
+              <label>Department</label>
+              <input type="text" placeholder="Your department">
+            </div>
+
+            <div class="form-group">
+              <label>Level</label>
+              <select>
+                <option>100 Level</option>
+                <option>200 Level</option>
+                <option>300 Level</option>
+                <option>400 Level</option>
+                <option>500 Level</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" placeholder="Create password">
+            </div>
+
+          </div>
+
+          <button type="submit" class="primary-btn">
+            Create Account
+          </button>
+
+        </form>
+
+        <p class="bottom-text">
+          Already have an account?
+          <a href="login.html">Login</a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

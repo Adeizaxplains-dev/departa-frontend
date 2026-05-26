@@ -1,0 +1,367 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | DEPARTA</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+
+  <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-top">
+
+      <div class="logo">
+        <div class="logo-icon">D</div>
+        <h2>DEPARTA</h2>
+      </div>
+
+      <ul class="sidebar-links">
+
+        <li class="active">
+          <a href="#">
+            🏠 Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="discussion.html">
+            💬 Discussion
+          </a>
+        </li>
+
+        <li>
+          <a href="courses.html">
+            📚 Courses
+          </a>
+        </li>
+
+        <li>
+          <a href="upload.html">
+            📄 Upload
+          </a>
+        </li>
+
+        <li>
+          <a href="search.html">
+            🔍 Search
+          </a>
+        </li>
+
+        <li>
+          <a href="profile.html">
+            👤 Profile
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="sidebar-bottom">
+      <button class="logout-btn">
+        Logout
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+
+  <main class="main-content">
+
+    <!-- ================= TOPBAR ================= -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <div class="menu-toggle" id="menuToggle">
+          ☰
+        </div>
+
+        <h2>
+          Welcome Back, Abdulmalik 👋
+        </h2>
+
+      </div>
+
+      <div class="topbar-right">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search discussions, courses...">
+        </div>
+
+        <div class="notification">
+          🔔
+        </div>
+
+        <div class="profile-avatar">
+          A
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- ================= DASHBOARD GRID ================= -->
+
+    <section class="dashboard-grid">
+
+      <!-- ================= FEED ================= -->
+
+      <div class="feed-section">
+
+        <!-- CREATE POST -->
+
+        <div class="create-post">
+
+          <div class="post-top">
+
+            <div class="profile-avatar">
+              A
+            </div>
+
+            <input type="text" placeholder="Start an academic discussion...">
+
+          </div>
+
+          <div class="post-actions">
+
+            <button>
+              📄 Upload Material
+            </button>
+
+            <button>
+              💬 Ask Question
+            </button>
+
+            <button class="primary-btn">
+              Post
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- DISCUSSION CARD -->
+
+        <div class="discussion-card">
+
+          <div class="discussion-header">
+
+            <div class="discussion-user">
+
+              <div class="profile-avatar">
+                S
+              </div>
+
+              <div>
+                <h4>Sarah Johnson</h4>
+                <span>CSC 202 • University of Lagos</span>
+              </div>
+
+            </div>
+
+            <span class="time">
+              2h ago
+            </span>
+
+          </div>
+
+          <h3>
+            Can someone explain recursion in programming?
+          </h3>
+
+          <p>
+            I understand loops very well but recursion still feels confusing. Especially base cases and recursive calls.
+          </p>
+
+          <div class="discussion-tags">
+            <span>#ComputerScience</span>
+            <span>#Programming</span>
+          </div>
+
+          <div class="discussion-actions">
+
+            <button>
+              👍 120
+            </button>
+
+            <button>
+              💬 34
+            </button>
+
+            <button>
+              🔖 Save
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- SECOND DISCUSSION -->
+
+        <div class="discussion-card">
+
+          <div class="discussion-header">
+
+            <div class="discussion-user">
+
+              <div class="profile-avatar">
+                M
+              </div>
+
+              <div>
+                <h4>Mohammed Bello</h4>
+                <span>MTH 201 • ABU Zaria</span>
+              </div>
+
+            </div>
+
+            <span class="time">
+              5h ago
+            </span>
+
+          </div>
+
+          <h3>
+            Integration shortcuts for WAEC and University Exams
+          </h3>
+
+          <p>
+            Here are some patterns I noticed while solving repeated integration questions.
+          </p>
+
+          <div class="discussion-tags">
+            <span>#Mathematics</span>
+            <span>#Integration</span>
+          </div>
+
+          <div class="discussion-actions">
+
+            <button>
+              👍 89
+            </button>
+
+            <button>
+              💬 20
+            </button>
+
+            <button>
+              🔖 Save
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= RIGHT SIDEBAR ================= -->
+
+      <div class="right-sidebar">
+
+        <!-- PROFILE CARD -->
+
+        <div class="profile-card">
+
+          <div class="profile-avatar large">
+            A
+          </div>
+
+          <h3>
+            Abdulmalik Momoh
+          </h3>
+
+          <p>
+            Mathematics Education
+          </p>
+
+          <span>
+            University Community Contributor
+          </span>
+
+        </div>
+
+        <!-- TRENDING COURSES -->
+
+        <div class="widget">
+
+          <div class="widget-header">
+            <h3>Trending Courses</h3>
+          </div>
+
+          <div class="course-item">
+            <h4>CSC 202</h4>
+            <span>Programming Fundamentals</span>
+          </div>
+
+          <div class="course-item">
+            <h4>MTH 201</h4>
+            <span>Advanced Calculus</span>
+          </div>
+
+          <div class="course-item">
+            <h4>CHM 101</h4>
+            <span>Organic Chemistry</span>
+          </div>
+
+        </div>
+
+        <!-- TOP CONTRIBUTORS -->
+
+        <div class="widget">
+
+          <div class="widget-header">
+            <h3>Top Contributors</h3>
+          </div>
+
+          <div class="contributor">
+
+            <div class="profile-avatar small">
+              D
+            </div>
+
+            <div>
+              <h4>David James</h4>
+              <span>120 Materials Uploaded</span>
+            </div>
+
+          </div>
+
+          <div class="contributor">
+
+            <div class="profile-avatar small">
+              R
+            </div>
+
+            <div>
+              <h4>Rahma Yusuf</h4>
+              <span>85 Discussions Created</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

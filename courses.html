@@ -1,0 +1,403 @@
+<!-- courses.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Courses | DEPARTA</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/courses.css">
+</head>
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+
+  <aside class="sidebar" id="sidebar">
+
+    <div>
+
+      <div class="logo">
+        <div class="logo-icon">D</div>
+        <h2>DEPARTA</h2>
+      </div>
+
+      <ul class="sidebar-links">
+
+        <li>
+          <a href="dashboard.html">
+            🏠 Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="discussion.html">
+            💬 Discussions
+          </a>
+        </li>
+
+        <li class="active">
+          <a href="#">
+            📚 Courses
+          </a>
+        </li>
+
+        <li>
+          <a href="upload.html">
+            📄 \Upload
+          </a>
+        </li>
+
+        <li>
+          <a href="profile.html">
+            👤 Profile
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <button class="logout-btn">
+      Logout
+    </button>
+
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+
+  <main class="main-content">
+
+    <!-- ================= TOPBAR ================= -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <div class="menu-toggle" id="menuToggle">
+          ☰
+        </div>
+
+        <div>
+
+          <h2>
+            Courses
+          </h2>
+
+          <p>
+            Explore courses, lecturers and learning materials.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="topbar-right">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search course code or title...">
+        </div>
+
+        <button class="upload-btn">
+          + Upload Course Material
+        </button>
+
+      </div>
+
+    </header>
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="filters">
+
+      <button class="active-filter">
+        All
+      </button>
+
+      <button>
+        Computer Science
+      </button>
+
+      <button>
+        Mathematics
+      </button>
+
+      <button>
+        Engineering
+      </button>
+
+      <button>
+        Chemistry
+      </button>
+
+      <button>
+        Physics
+      </button>
+
+    </section>
+
+    <!-- ================= COURSE GRID ================= -->
+
+    <section class="course-grid">
+
+      <!-- ================= COURSE CARD ================= -->
+
+      <div class="course-card">
+
+        <div class="course-top">
+
+          <span class="course-badge">
+            CSC 202
+          </span>
+
+          <button class="save-btn">
+            🔖
+          </button>
+
+        </div>
+
+        <h3>
+          Data Structures & Algorithms
+        </h3>
+
+        <p>
+          Learn arrays, linked lists, stacks, queues, trees and algorithmic thinking.
+        </p>
+
+        <div class="lecturer">
+
+          <div class="lecturer-avatar">
+            D
+          </div>
+
+          <div>
+
+            <h4>
+              Dr. Daniel Yusuf
+            </h4>
+
+            <span>
+              University of Lagos
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="course-info">
+
+          <div>
+            📄 42 Uploads
+          </div>
+
+          <div> 
+            💬 18 Discussion
+          </div>
+
+        </div>
+
+        <button class="view-btn">
+          View Course
+        </button>
+
+      </div>
+
+      <!-- ================= SECOND CARD ================= -->
+
+      <div class="course-card">
+
+        <div class="course-top">
+
+          <span class="course-badge">
+            MTH 201
+          </span>
+
+          <button class="save-btn">
+            🔖
+          </button>
+
+        </div>
+
+        <h3>
+          Advanced Calculus
+        </h3>
+
+        <p>
+          Master differentiation, integration and applications in engineering and sciences.
+        </p>
+
+        <div class="lecturer">
+
+          <div class="lecturer-avatar">
+            A
+          </div>
+
+          <div>
+
+            <h4>
+              Prof. Ahmed Musa
+            </h4>
+
+            <span>
+              ABU Zaria
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="course-info">
+
+          <div>
+            📄 30 Materials
+          </div>
+
+          <div>
+            💬 25 Discussions
+          </div>
+
+        </div>
+
+        <button class="view-btn">
+          View Course
+        </button>
+
+      </div>
+
+      <!-- ================= THIRD CARD ================= -->
+
+      <div class="course-card">
+
+        <div class="course-top">
+
+          <span class="course-badge">
+            CHM 101
+          </span>
+
+          <button class="save-btn">
+            🔖
+          </button>
+
+        </div>
+
+        <h3>
+          Organic Chemistry
+        </h3>
+
+        <p>
+          Understand hydrocarbons, reaction mechanisms and laboratory techniques.
+        </p>
+
+        <div class="lecturer">
+
+          <div class="lecturer-avatar">
+            R
+          </div>
+
+          <div>
+
+            <h4>
+              Dr. Rahma Bello
+            </h4>
+
+            <span>
+              FUTA
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="course-info">
+
+          <div>
+            📄 55 Materials
+          </div>
+
+          <div>
+            💬 32 Discussions
+          </div>
+
+        </div>
+
+        <button class="view-btn">
+          View Course
+        </button>
+
+      </div>
+
+      <!-- ================= FOURTH CARD ================= -->
+
+      <div class="course-card">
+
+        <div class="course-top">
+
+          <span class="course-badge">
+            PHY 103
+          </span>
+
+          <button class="save-btn">
+            🔖
+          </button>
+
+        </div>
+
+        <h3>
+          General Physics
+        </h3>
+
+        <p>
+          Explore mechanics, motion, electricity and modern physics principles.
+        </p>
+
+        <div class="lecturer">
+
+          <div class="lecturer-avatar">
+            S
+          </div>
+
+          <div>
+
+            <h4>
+              Dr. Samuel Adeyemi
+            </h4>
+
+            <span>
+              University of Ibadan
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="course-info">
+
+          <div>
+            📄 60 Materials
+          </div>
+
+          <div>
+            💬 40 Discussions
+          </div>
+
+        </div>
+
+        <button class="view-btn">
+          View Course
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/courses.js"></script>
+</body>
+</html>

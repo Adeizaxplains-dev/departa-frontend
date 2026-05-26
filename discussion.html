@@ -1,0 +1,448 @@
+<!-- discussions.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discussions | DEPARTA</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/discussion.css">
+</head>
+<body>
+
+  <!-- ================= SIDEBAR ================= -->
+
+  <aside class="sidebar" id="sidebar">
+
+    <div>
+
+      <div class="logo">
+        <div class="logo-icon">D</div>
+        <h2>DEPARTA</h2>
+      </div>
+
+      <ul class="sidebar-links">
+
+        <li>
+          <a href="dashboard.html">
+            🏠 Dashboard
+          </a>
+        </li>
+
+        <li class="active">
+          <a href="dashboard.html">
+            💬 Discussions
+          </a>
+        </li>
+
+        <li>
+          <a href="courses.html">
+            📚 Courses
+          </a>
+        </li>
+
+        <li>
+          <a href="upload.html">
+            📄 Upload
+          </a>
+        </li>
+
+        <li>
+          <a href="profile.html">
+            👤 Profile
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <button class="logout-btn">
+      Logout
+    </button>
+
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="main-content">
+
+    <!-- ================= TOPBAR ================= -->
+
+    <header class="topbar">
+
+      <div class="topbar-left">
+
+        <div class="menu-toggle" id="menuToggle">
+          ☰
+        </div>
+
+        <div>
+          <h2>Academic Discussions</h2>
+          <p>
+            Explore conversations from students across universities.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="topbar-right">
+
+        <div class="search-box">
+          <input type="text" placeholder="Search discussions...">
+        </div>
+
+        <a href="discussion.html"><button class="create-btn">
+          + New Discussion
+        </button></a>
+
+      </div>
+
+    </header>
+
+    <!-- ================= FILTERS ================= -->
+
+    <section class="filters">
+
+      <a href="discussion.html"><button class="active-filter">
+        All Discussions
+      </button></a>
+
+      <button>
+        Trending
+      </button>
+
+      <button>
+        Computer Science
+      </button>
+
+      <button>
+        Mathematics
+      </button>
+
+      <button>
+        Chemistry
+      </button>
+
+      <button>
+        Physics
+      </button>
+
+    </section>
+
+    <!-- ================= DISCUSSIONS LAYOUT ================= -->
+
+    <section class="discussion-layout">
+
+      <!-- ================= DISCUSSION FEED ================= -->
+
+      <div class="discussion-feed">
+
+        <!-- DISCUSSION CARD -->
+
+        <div class="discussion-card">
+
+          <div class="discussion-header">
+
+            <div class="discussion-user">
+
+              <div class="avatar">
+                A
+              </div>
+
+              <div>
+
+                <h4>
+                  Abdulrahman Musa
+                </h4>
+
+                <span>
+                  CSC 202 • University of Lagos
+                </span>
+
+              </div>
+
+            </div>
+
+            <span class="time">
+              2h ago
+            </span>
+
+          </div>
+
+          <h3>
+            Best Way To Understand Data Structures?
+          </h3>
+
+          <p>
+            I’ve been struggling with linked lists and trees. What resources or methods helped you understand them properly?
+          </p>
+
+          <div class="discussion-tags">
+
+            <span>#ComputerScience</span>
+            <span>#Programming</span>
+            <span>#DataStructures</span>
+
+          </div>
+
+          <div class="discussion-footer">
+
+            <button>
+              👍 120
+            </button>
+
+            <button>
+              💬 34 Replies
+            </button>
+
+            <button>
+              🔖 Save
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- SECOND CARD -->
+
+        <div class="discussion-card">
+
+          <div class="discussion-header">
+
+            <div class="discussion-user">
+
+              <div class="avatar">
+                R
+              </div>
+
+              <div>
+
+                <h4>
+                  Rahma Yusuf
+                </h4>
+
+                <span>
+                  MTH 201 • ABU Zaria
+                </span>
+
+              </div>
+
+            </div>
+
+            <span class="time">
+              5h ago
+            </span>
+
+          </div>
+
+          <h3>
+            Integration Techniques That Helped Me Pass Exams
+          </h3>
+
+          <p>
+            I compiled shortcuts and repeated patterns for solving integration problems faster during exams.
+          </p>
+
+          <div class="discussion-tags">
+
+            <span>#Mathematics</span>
+            <span>#Calculus</span>
+
+          </div>
+
+          <div class="discussion-footer">
+
+            <button>
+              👍 89
+            </button>
+
+            <button>
+              💬 20 Replies
+            </button>
+
+            <button>
+              🔖 Save
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- THIRD CARD -->
+
+        <div class="discussion-card">
+
+          <div class="discussion-header">
+
+            <div class="discussion-user">
+
+              <div class="avatar">
+                S
+              </div>
+
+              <div>
+
+                <h4>
+                  Sarah James
+                </h4>
+
+                <span>
+                  CHM 101 • FUTA
+                </span>
+
+              </div>
+
+            </div>
+
+            <span class="time">
+              1 day ago
+            </span>
+
+          </div>
+
+          <h3>
+            Organic Chemistry Reaction Mechanisms Explained
+          </h3>
+
+          <p>
+            Here are some diagrams and tricks that made reaction mechanisms easier for me to understand.
+          </p>
+
+          <div class="discussion-tags">
+
+            <span>#Chemistry</span>
+            <span>#OrganicChemistry</span>
+
+          </div>
+
+          <div class="discussion-footer">
+
+            <button>
+              👍 154
+            </button>
+
+            <button>
+              💬 40 Replies
+            </button>
+
+            <button>
+              🔖 Save
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= RIGHT SIDEBAR ================= -->
+
+      <div class="right-sidebar">
+
+        <!-- TRENDING TOPICS -->
+
+        <div class="widget">
+
+          <div class="widget-header">
+            <h3>Trending Topics</h3>
+          </div>
+
+          <div class="topic">
+            <span>#Programming</span>
+            <p>1.2k discussions</p>
+          </div>
+
+          <div class="topic">
+            <span>#Calculus</span>
+            <p>890 discussions</p>
+          </div>
+
+          <div class="topic">
+            <span>#OrganicChemistry</span>
+            <p>650 discussions</p>
+          </div>
+
+        </div>
+
+        <!-- ACTIVE CONTRIBUTORS -->
+
+        <div class="widget">
+
+          <div class="widget-header">
+            <h3>Top Contributors</h3>
+          </div>
+
+          <div class="contributor">
+
+            <div class="avatar small">
+              D
+            </div>
+
+            <div>
+
+              <h4>David James</h4>
+              <span>120 discussions</span>
+
+            </div>
+
+          </div>
+
+          <div class="contributor">
+
+            <div class="avatar small">
+              M
+            </div>
+
+            <div>
+
+              <h4>Maryam Aliyu</h4>
+              <span>95 discussions</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- COMMUNITY STATS -->
+
+        <div class="widget">
+
+          <div class="widget-header">
+            <h3>Community Stats</h3>
+          </div>
+
+          <div class="stat-item">
+            <h4>24k+</h4>
+            <p>Discussions</p>
+          </div>
+
+          <div class="stat-item">
+            <h4>10k+</h4>
+            <p>Students</p>
+          </div>
+
+          <div class="stat-item">
+            <h4>150+</h4>
+            <p>Universities</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/discussion.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+/* profile.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+}
+
+body{
+  background:#F8FAFC;
+  color:#0F172A;
+  display:flex;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+  width:280px;
+  min-height:100vh;
+  background:#0F172A;
+  color:#fff;
+  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:50px;
+}
+
+.logo-icon{
+  width:42px;
+  height:42px;
+  background:#2563EB;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+
+.sidebar-links{
+  list-style:none;
+}
+
+.sidebar-links li{
+  margin-bottom:15px;
+}
+
+.sidebar-links li a{
+  text-decoration:none;
+  color:#CBD5E1;
+  padding:16px;
+  display:block;
+  border-radius:14px;
+  transition:0.3s;
+  font-weight:500;
+}
+
+.sidebar-links li a:hover,
+.sidebar-links .active a{
+  background:#1E293B;
+  color:#fff;
+}
+
+.logout-btn{
+  width:100%;
+  padding:16px;
+  border:none;
+  background:#2563EB;
+  color:#fff;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* ================= MAIN ================= */
+
+.main-content{
+  margin-left:280px;
+  width:calc(100% - 280px);
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+  background:#fff;
+  padding:25px 40px;
+  border-bottom:1px solid #E2E8F0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.topbar-left p{
+  color:#64748B;
+  margin-top:5px;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+.edit-btn{
+  padding:14px 24px;
+  border:none;
+  background:#2563EB;
+  color:#fff;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* ================= PROFILE HEADER ================= */
+
+.profile-header{
+  background:#fff;
+  margin:40px;
+  border-radius:28px;
+  overflow:hidden;
+  border:1px solid #E2E8F0;
+}
+
+.profile-banner{
+  height:220px;
+  background:linear-gradient(to right, #2563EB, #0F172A);
+}
+
+.profile-info{
+  padding:30px;
+  display:flex;
+  align-items:flex-end;
+  gap:25px;
+  margin-top:-70px;
+}
+
+.profile-avatar{
+  width:140px;
+  height:140px;
+  background:#fff;
+  color:#2563EB;
+  border-radius:50%;
+  border:6px solid #fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:50px;
+  font-weight:800;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.profile-details p{
+  color:#64748B;
+  margin:10px 0 18px;
+}
+
+.profile-details h2{
+    margin-top: 40px;
+}
+
+.profile-tags{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.profile-tags span{
+  background:#EFF6FF;
+  color:#2563EB;
+  padding:10px 16px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ================= PROFILE GRID ================= */
+
+.profile-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:30px;
+  padding:0 40px 40px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+  background:#fff;
+  border:1px solid #E2E8F0;
+  border-radius:24px;
+  padding:30px;
+  margin-bottom:25px;
+}
+
+.card-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:25px;
+}
+
+.card-header a{
+  text-decoration:none;
+  color:#2563EB;
+  font-weight:600;
+}
+
+.about-text{
+  line-height:1.9;
+  color:#475569;
+}
+
+/* ================= STATS ================= */
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+  margin-bottom:25px;
+}
+
+.stat-card{
+  background:#fff;
+  border:1px solid #E2E8F0;
+  border-radius:22px;
+  padding:25px;
+  text-align:center;
+}
+
+.stat-card h2{
+  color:#2563EB;
+  margin-bottom:10px;
+}
+
+.stat-card p{
+  color:#64748B;
+}
+
+/* ================= DISCUSSION ================= */
+
+.discussion-item{
+  padding:20px 0;
+  border-bottom:1px solid #E2E8F0;
+}
+
+.discussion-item:last-child{
+  border-bottom:none;
+}
+
+.discussion-item p{
+  color:#64748B;
+  margin:10px 0;
+  line-height:1.7;
+}
+
+.discussion-item span{
+  color:#2563EB;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ================= MATERIAL ================= */
+
+.material-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  padding:20px 0;
+  border-bottom:1px solid #E2E8F0;
+}
+
+.material-item:last-child{
+  border-bottom:none;
+}
+
+.material-icon{
+  width:55px;
+  height:55px;
+  background:#EFF6FF;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+
+.material-item span{
+  color:#64748B;
+  font-size:14px;
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-box span{
+  display:block;
+  margin-top:15px;
+  color:#2563EB;
+  font-weight:600;
+}
+
+.progress-bar{
+  width:100%;
+  height:12px;
+  background:#E2E8F0;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  width:85%;
+  height:100%;
+  background:#2563EB;
+}
+
+/* ================= SKILLS ================= */
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.skills span{
+  background:#EFF6FF;
+  color:#2563EB;
+  padding:12px 16px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievement{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+}
+
+.achievement:last-child{
+  margin-bottom:0;
+}
+
+.achievement-icon{
+  width:55px;
+  height:55px;
+  background:#EFF6FF;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+}
+
+.achievement span{
+  color:#64748B;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+  .profile-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:900px){
+
+  .sidebar{
+    left:-100%;
+    transition:0.3s;
+    z-index:999;
+  }
+
+  .sidebar.active{
+    left:0;
+  }
+
+  .main-content{
+    margin-left:0;
+    width:100%;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .topbar{
+    padding:20px;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+  }
+
+  .profile-header{
+    margin:20px;
+  }
+
+  .profile-grid{
+    padding:0 20px 30px;
+  }
+
+  .profile-info{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+}

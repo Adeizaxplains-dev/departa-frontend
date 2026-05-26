@@ -1,0 +1,286 @@
+/* upload.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+}
+
+body{
+  background:#F8FAFC;
+  color:#0F172A;
+  display:flex;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+  width:280px;
+  min-height:100vh;
+  background:#0F172A;
+  color:#fff;
+  padding:30px 20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:fixed;
+  left:0;
+  top:0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:50px;
+}
+
+.logo-icon{
+  width:42px;
+  height:42px;
+  background:#2563EB;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+
+.sidebar-links{
+  list-style:none;
+}
+
+.sidebar-links li{
+  margin-bottom:15px;
+}
+
+.sidebar-links li a{
+  text-decoration:none;
+  color:#CBD5E1;
+  padding:16px;
+  display:block;
+  border-radius:14px;
+  transition:0.3s;
+  font-weight:500;
+}
+
+.sidebar-links li a:hover,
+.sidebar-links .active a{
+  background:#1E293B;
+  color:#fff;
+}
+
+.logout-btn{
+  width:100%;
+  padding:16px;
+  border:none;
+  background:#2563EB;
+  color:#fff;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+/* ================= MAIN ================= */
+
+.main-content{
+  margin-left:280px;
+  width:calc(100% - 280px);
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+  background:#fff;
+  padding:25px 40px;
+  border-bottom:1px solid #E2E8F0;
+}
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.topbar-left p{
+  color:#64748B;
+  margin-top:5px;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* ================= WRAPPER ================= */
+
+.upload-wrapper{
+  padding:40px;
+  display:flex;
+  justify-content:center;
+}
+
+.upload-card{
+  width:100%;
+  max-width:1000px;
+  background:#fff;
+  border:1px solid #E2E8F0;
+  border-radius:28px;
+  padding:40px;
+}
+
+.upload-header{
+  margin-bottom:35px;
+}
+
+.upload-header p{
+  color:#64748B;
+  margin-top:10px;
+}
+
+/* ================= FORM ================= */
+
+.form-group{
+  margin-bottom:25px;
+}
+
+.form-group label{
+  display:block;
+  margin-bottom:12px;
+  font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:16px;
+  border:1px solid #CBD5E1;
+  border-radius:14px;
+  outline:none;
+  font-size:15px;
+}
+
+.form-group textarea{
+  min-height:140px;
+  resize:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:#2563EB;
+}
+
+/* ================= GRID ================= */
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+/* ================= UPLOAD BOX ================= */
+
+.upload-box{
+  border:2px dashed #CBD5E1;
+  border-radius:24px;
+  padding:50px 20px;
+  text-align:center;
+  background:#F8FAFC;
+  transition:0.3s;
+}
+
+.upload-box:hover{
+  border-color:#2563EB;
+}
+
+.upload-content h4{
+  margin:15px 0 10px;
+}
+
+.upload-content p{
+  color:#64748B;
+  margin-bottom:20px;
+}
+
+.upload-icon{
+  font-size:50px;
+}
+
+.upload-content button{
+  padding:14px 24px;
+  border:none;
+  background:#2563EB;
+  color:#fff;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.file-name{
+  margin-top:15px;
+  color:#2563EB;
+  font-weight:600;
+}
+
+/* ================= BUTTON ================= */
+
+.submit-btn{
+  width:100%;
+  padding:18px;
+  border:none;
+  background:#2563EB;
+  color:#fff;
+  border-radius:16px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:700;
+  margin-top:10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .sidebar{
+    left:-100%;
+    transition:0.3s;
+    z-index:999;
+  }
+
+  .sidebar.active{
+    left:0;
+  }
+
+  .main-content{
+    margin-left:0;
+    width:100%;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+}
+
+@media(max-width:768px){
+
+  .topbar{
+    padding:20px;
+  }
+
+  .upload-wrapper{
+    padding:20px;
+  }
+
+  .upload-card{
+    padding:25px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+}
