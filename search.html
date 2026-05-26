@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search | DEPARTA</title>
+
+  <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <h2>DEPARTA Search</h2>
+    <a href="dashboard.html">← Back to Dashboard</a>
+  </header>
+
+  <!-- SEARCH SECTION -->
+  <section class="search-container">
+
+    <input type="text" id="searchInput" placeholder="Search courses, students, lecturers, materials...">
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <button class="filter active" data-type="all">All</button>
+      <button class="filter" data-type="courses">Courses</button>
+      <button class="filter" data-type="students">Students</button>
+      <button class="filter" data-type="lecturers">Lecturers</button>
+      <button class="filter" data-type="materials">Materials</button>
+      <button class="filter" data-type="discussions">Discussions</button>
+    </div>
+
+    <!-- RESULTS -->
+    <div id="results" class="results">
+
+      <!-- SAMPLE DATA -->
+      <div class="card" data-type="courses">
+        📚 MTH 101 - Calculus
+      </div>
+
+      <div class="card" data-type="lecturers">
+        👨‍🏫 Dr. Ahmed Musa
+      </div>
+
+      <div class="card" data-type="students">
+        🎓 John Doe (Computer Science)
+      </div>
+
+      <div class="card" data-type="materials">
+        📄 Calculus Lecture Note PDF
+      </div>
+
+      <div class="card" data-type="discussions">
+        💬 Integration Techniques Discussion
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="js/search.js"></script>
+
+</body>
+</html>
