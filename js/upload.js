@@ -38,6 +38,31 @@ fileInput.addEventListener("change", () => {
 
 });
 
+document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData();
+
+  formData.append("title", document.getElementById("title").value);
+  formData.append("description", document.getElementById("description").value);
+  formData.append("courseId", document.getElementById("courseId").value);
+  formData.append("file", document.getElementById("file").files[0]);
+
+  const token = localStorage.getItem("token");
+
+  const res = await fetch("http://localhost:5000/api/materials", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`
+    },
+    body: formData
+  });
+
+  const data = await res.json();
+
+  alert(data.message || "Uploaded!");
+});
+
 /* ================= FORM SUBMIT ================= */
 
 uploadForm.addEventListener("submit", (e) => {

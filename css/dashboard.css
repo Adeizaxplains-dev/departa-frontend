@@ -16,17 +16,23 @@ body{
 /* ================= SIDEBAR ================= */
 
 .sidebar{
-  width:280px;
-  min-height:100vh;
-  background:#0F172A;
-  color:#fff;
-  padding:30px 20px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  position:fixed;
-  left:0;
-  top:0;
+ .sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100vh;
+  background: #1e293b;
+  color: white;
+  transition: 0.3s ease;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* when active */
+.sidebar.active {
+  left: 0;
+}
 }
 
 .logo{

@@ -155,7 +155,53 @@
 
         </div>
 
-        <!-- DISCUSSION CARD -->
+
+        <h1>Student Dashboard</h1>
+
+<div id="userInfo"></div>
+
+<ul>
+  <li>📚 Materials</li>
+  <li>💬 Discussions</li>
+  <li>👥 Connections</li>
+  <li>📂 Courses</li>
+</ul>
+
+<h1>Lecturer Dashboard</h1>
+
+<div id="userInfo"></div>
+
+<ul>
+  <li>📚 Upload Materials</li>
+  <li>🧠 Research Discussions</li>
+  <li>📘 Create Courses</li>
+  <li>👥 Connect with Lecturers</li>
+</ul>
+
+
+<h1>Admin Dashboard</h1>
+
+<div id="userInfo"></div>
+
+<ul>
+  <li>👤 Manage Users</li>
+  <li>📚 Moderate Materials</li>
+  <li>💬 Manage Discussions</li>
+  <li>🏫 Manage Departments</li>
+</ul>
+
+ <h2>Upload Material</h2>
+
+<form id="uploadForm">
+  <input type="text" id="title" placeholder="Title" />
+  <input type="text" id="description" placeholder="Description" />
+  <input type="text" id="courseId" placeholder="Course ID" />
+  <input type="file" id="file" />
+  <button type="submit">Upload</button>
+</form>
+
+
+A        <!-- DISCUSSION CARD -->
 
         <div class="discussion-card">
 
@@ -362,6 +408,33 @@
 
   </main>
 
+  <h2>📚 Live Materials Feed</h2>
+
+<div id="feed"></div>
+
+<script src="js/feed.js"></script>
+
+
+  <script src="js/api.js"></script>
+<script>
+  async function loadDashboard() {
+    const user = await loadUser();
+
+    const materials = await getMaterials();
+
+    const container = document.getElementById("materials");
+
+    container.innerHTML = materials.map(m => `
+      <div>
+        <h3>${m.title}</h3>
+        <p>${m.description}</p>
+        <small>Uploaded by: ${m.uploadedByRole}</small>
+      </div>
+    `).join("");
+  }
+
+  loadDashboard();
+</script>
   <script src="js/dashboard.js"></script>
 </body>
 </html>

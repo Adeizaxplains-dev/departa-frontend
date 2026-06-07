@@ -291,6 +291,16 @@ section{
   line-height:1.7;
 }
 
+#threadContainer {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#comments div {
+  background: white;
+  border-radius: 8px;
+}
 /* ================= TRENDING ================= */
 
 .discussion-grid{
